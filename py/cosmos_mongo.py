@@ -99,6 +99,18 @@ class Mongo(object):
     def client(self):
         return self._client
 
+    def last_request_stats(self):
+        return self._db.command({"getLastRequestStatistics": 1})
+
+        # globaldb:PRIMARY> result = db.runCommand({"getLastRequestStatistics": 1})
+        # {
+        # 	"CommandName" : "find",
+        # 	"RequestCharge" : 12.73,
+        # 	"RequestDurationInMilliSeconds" : NumberLong(252),
+        # 	"ActivityId" : "1d3b2998-d17c-4693-b247-020f64d18289",
+        # 	"ok" : 1
+        # }
+
 
 def load_db(design_name):
     print('load_db, design_name: {}'.format(design_name))
@@ -159,6 +171,9 @@ def query_container_by_pk(cname, pk_value):
     for idx, doc in enumerate(mongo_client.find(query_spec)):
         print('--- result idx {}'.format(idx))
         print(doc)
+
+    stats = mongo_client.last_request_stats()
+    print(stats)
 
 def query_container_by_pk_and_doctype(cname, pk_value, doctype):
     print('query_container: {} by pk: {} and doctype: {}'.format(cname, pk_value, doctype))
