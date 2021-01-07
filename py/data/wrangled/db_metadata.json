@@ -1,0 +1,610 @@
+{
+  "Address": [
+    {
+      "col_idx": 0,
+      "col_name": "AddressID",
+      "col_type": "int identity",
+      "table": "Address"
+    },
+    {
+      "col_idx": 1,
+      "col_name": "AddressLine1",
+      "col_type": "nvarchar",
+      "table": "Address"
+    },
+    {
+      "col_idx": 2,
+      "col_name": "AddressLine2",
+      "col_type": "nvarchar",
+      "table": "Address"
+    },
+    {
+      "col_idx": 3,
+      "col_name": "City",
+      "col_type": "nvarchar",
+      "table": "Address"
+    },
+    {
+      "col_idx": 4,
+      "col_name": "StateProvince",
+      "col_type": "Name",
+      "table": "Address"
+    },
+    {
+      "col_idx": 5,
+      "col_name": "CountryRegion",
+      "col_type": "Name",
+      "table": "Address"
+    },
+    {
+      "col_idx": 6,
+      "col_name": "PostalCode",
+      "col_type": "nvarchar",
+      "table": "Address"
+    },
+    {
+      "col_idx": 7,
+      "col_name": "rowguid",
+      "col_type": "uniqueidentifier",
+      "table": "Address"
+    },
+    {
+      "col_idx": 8,
+      "col_name": "ModifiedDate",
+      "col_type": "datetime",
+      "table": "Address"
+    }
+  ],
+  "Customer": [
+    {
+      "col_idx": 0,
+      "col_name": "CustomerID",
+      "col_type": "int identity",
+      "table": "Customer"
+    },
+    {
+      "col_idx": 1,
+      "col_name": "NameStyle",
+      "col_type": "NameStyle",
+      "table": "Customer"
+    },
+    {
+      "col_idx": 2,
+      "col_name": "Title",
+      "col_type": "nvarchar",
+      "table": "Customer"
+    },
+    {
+      "col_idx": 3,
+      "col_name": "FirstName",
+      "col_type": "Name",
+      "table": "Customer"
+    },
+    {
+      "col_idx": 4,
+      "col_name": "MiddleName",
+      "col_type": "Name",
+      "table": "Customer"
+    },
+    {
+      "col_idx": 5,
+      "col_name": "LastName",
+      "col_type": "Name",
+      "table": "Customer"
+    },
+    {
+      "col_idx": 6,
+      "col_name": "Suffix",
+      "col_type": "nvarchar",
+      "table": "Customer"
+    },
+    {
+      "col_idx": 7,
+      "col_name": "CompanyName",
+      "col_type": "nvarchar",
+      "table": "Customer"
+    },
+    {
+      "col_idx": 8,
+      "col_name": "SalesPerson",
+      "col_type": "nvarchar",
+      "table": "Customer"
+    },
+    {
+      "col_idx": 9,
+      "col_name": "EmailAddress",
+      "col_type": "nvarchar",
+      "table": "Customer"
+    },
+    {
+      "col_idx": 10,
+      "col_name": "Phone",
+      "col_type": "Phone",
+      "table": "Customer"
+    },
+    {
+      "col_idx": 11,
+      "col_name": "PasswordHash",
+      "col_type": "varchar",
+      "table": "Customer"
+    },
+    {
+      "col_idx": 12,
+      "col_name": "PasswordSalt",
+      "col_type": "varchar",
+      "table": "Customer"
+    },
+    {
+      "col_idx": 13,
+      "col_name": "rowguid",
+      "col_type": "uniqueidentifier",
+      "table": "Customer"
+    },
+    {
+      "col_idx": 14,
+      "col_name": "ModifiedDate",
+      "col_type": "datetime",
+      "table": "Customer"
+    }
+  ],
+  "CustomerAddress": [
+    {
+      "col_idx": 0,
+      "col_name": "CustomerID",
+      "col_type": "int",
+      "table": "CustomerAddress"
+    },
+    {
+      "col_idx": 1,
+      "col_name": "AddressID",
+      "col_type": "int",
+      "table": "CustomerAddress"
+    },
+    {
+      "col_idx": 2,
+      "col_name": "AddressType",
+      "col_type": "Name",
+      "table": "CustomerAddress"
+    },
+    {
+      "col_idx": 3,
+      "col_name": "rowguid",
+      "col_type": "uniqueidentifier",
+      "table": "CustomerAddress"
+    },
+    {
+      "col_idx": 4,
+      "col_name": "ModifiedDate",
+      "col_type": "datetime",
+      "table": "CustomerAddress"
+    }
+  ],
+  "Product": [
+    {
+      "col_idx": 0,
+      "col_name": "ProductID",
+      "col_type": "int identity",
+      "table": "Product"
+    },
+    {
+      "col_idx": 1,
+      "col_name": "Name",
+      "col_type": "Name",
+      "table": "Product"
+    },
+    {
+      "col_idx": 2,
+      "col_name": "ProductNumber",
+      "col_type": "nvarchar",
+      "table": "Product"
+    },
+    {
+      "col_idx": 3,
+      "col_name": "Color",
+      "col_type": "nvarchar",
+      "table": "Product"
+    },
+    {
+      "col_idx": 4,
+      "col_name": "StandardCost",
+      "col_type": "money",
+      "table": "Product"
+    },
+    {
+      "col_idx": 5,
+      "col_name": "ListPrice",
+      "col_type": "money",
+      "table": "Product"
+    },
+    {
+      "col_idx": 6,
+      "col_name": "Size",
+      "col_type": "nvarchar",
+      "table": "Product"
+    },
+    {
+      "col_idx": 7,
+      "col_name": "Weight",
+      "col_type": "decimal",
+      "table": "Product"
+    },
+    {
+      "col_idx": 8,
+      "col_name": "ProductCategoryID",
+      "col_type": "int",
+      "table": "Product"
+    },
+    {
+      "col_idx": 9,
+      "col_name": "ProductModelID",
+      "col_type": "int",
+      "table": "Product"
+    },
+    {
+      "col_idx": 10,
+      "col_name": "SellStartDate",
+      "col_type": "datetime",
+      "table": "Product"
+    },
+    {
+      "col_idx": 11,
+      "col_name": "SellEndDate",
+      "col_type": "datetime",
+      "table": "Product"
+    },
+    {
+      "col_idx": 12,
+      "col_name": "DiscontinuedDate",
+      "col_type": "datetime",
+      "table": "Product"
+    },
+    {
+      "col_idx": 13,
+      "col_name": "ThumbNailPhoto",
+      "col_type": "image",
+      "table": "Product"
+    },
+    {
+      "col_idx": 14,
+      "col_name": "ThumbnailPhotoFileName",
+      "col_type": "nvarchar",
+      "table": "Product"
+    },
+    {
+      "col_idx": 15,
+      "col_name": "rowguid",
+      "col_type": "uniqueidentifier",
+      "table": "Product"
+    },
+    {
+      "col_idx": 16,
+      "col_name": "ModifiedDate",
+      "col_type": "datetime",
+      "table": "Product"
+    }
+  ],
+  "ProductCategory": [
+    {
+      "col_idx": 0,
+      "col_name": "ProductCategoryID",
+      "col_type": "int identity",
+      "table": "ProductCategory"
+    },
+    {
+      "col_idx": 1,
+      "col_name": "ParentProductCategoryID",
+      "col_type": "int",
+      "table": "ProductCategory"
+    },
+    {
+      "col_idx": 2,
+      "col_name": "Name",
+      "col_type": "Name",
+      "table": "ProductCategory"
+    },
+    {
+      "col_idx": 3,
+      "col_name": "rowguid",
+      "col_type": "uniqueidentifier",
+      "table": "ProductCategory"
+    },
+    {
+      "col_idx": 4,
+      "col_name": "ModifiedDate",
+      "col_type": "datetime",
+      "table": "ProductCategory"
+    }
+  ],
+  "ProductDescription": [
+    {
+      "col_idx": 0,
+      "col_name": "ProductDescriptionID",
+      "col_type": "int identity",
+      "table": "ProductDescription"
+    },
+    {
+      "col_idx": 1,
+      "col_name": "Description",
+      "col_type": "nvarchar",
+      "table": "ProductDescription"
+    },
+    {
+      "col_idx": 2,
+      "col_name": "rowguid",
+      "col_type": "uniqueidentifier",
+      "table": "ProductDescription"
+    },
+    {
+      "col_idx": 3,
+      "col_name": "ModifiedDate",
+      "col_type": "datetime",
+      "table": "ProductDescription"
+    }
+  ],
+  "ProductModel": [
+    {
+      "col_idx": 0,
+      "col_name": "ProductModelID",
+      "col_type": "int identity",
+      "table": "ProductModel"
+    },
+    {
+      "col_idx": 1,
+      "col_name": "Name",
+      "col_type": "Name",
+      "table": "ProductModel"
+    },
+    {
+      "col_idx": 2,
+      "col_name": "CatalogDescription",
+      "col_type": "xml",
+      "table": "ProductModel"
+    },
+    {
+      "col_idx": 3,
+      "col_name": "rowguid",
+      "col_type": "uniqueidentifier",
+      "table": "ProductModel"
+    },
+    {
+      "col_idx": 4,
+      "col_name": "ModifiedDate",
+      "col_type": "datetime",
+      "table": "ProductModel"
+    }
+  ],
+  "ProductModelProductDescription": [
+    {
+      "col_idx": 0,
+      "col_name": "ProductModelID",
+      "col_type": "int",
+      "table": "ProductModelProductDescription"
+    },
+    {
+      "col_idx": 1,
+      "col_name": "ProductDescriptionID",
+      "col_type": "int",
+      "table": "ProductModelProductDescription"
+    },
+    {
+      "col_idx": 2,
+      "col_name": "Culture",
+      "col_type": "nchar",
+      "table": "ProductModelProductDescription"
+    },
+    {
+      "col_idx": 3,
+      "col_name": "rowguid",
+      "col_type": "uniqueidentifier",
+      "table": "ProductModelProductDescription"
+    },
+    {
+      "col_idx": 4,
+      "col_name": "ModifiedDate",
+      "col_type": "datetime",
+      "table": "ProductModelProductDescription"
+    }
+  ],
+  "SalesOrderDetail": [
+    {
+      "col_idx": 0,
+      "col_name": "SalesOrderID",
+      "col_type": "int",
+      "table": "SalesOrderDetail"
+    },
+    {
+      "col_idx": 1,
+      "col_name": "SalesOrderDetailID",
+      "col_type": "int identity",
+      "table": "SalesOrderDetail"
+    },
+    {
+      "col_idx": 2,
+      "col_name": "OrderQty",
+      "col_type": "smallint",
+      "table": "SalesOrderDetail"
+    },
+    {
+      "col_idx": 3,
+      "col_name": "ProductID",
+      "col_type": "int",
+      "table": "SalesOrderDetail"
+    },
+    {
+      "col_idx": 4,
+      "col_name": "UnitPrice",
+      "col_type": "money",
+      "table": "SalesOrderDetail"
+    },
+    {
+      "col_idx": 5,
+      "col_name": "UnitPriceDiscount",
+      "col_type": "money",
+      "table": "SalesOrderDetail"
+    },
+    {
+      "col_idx": 6,
+      "col_name": "LineTotal",
+      "col_type": "numeric",
+      "table": "SalesOrderDetail"
+    },
+    {
+      "col_idx": 7,
+      "col_name": "rowguid",
+      "col_type": "uniqueidentifier",
+      "table": "SalesOrderDetail"
+    },
+    {
+      "col_idx": 8,
+      "col_name": "ModifiedDate",
+      "col_type": "datetime",
+      "table": "SalesOrderDetail"
+    }
+  ],
+  "SalesOrderHeader": [
+    {
+      "col_idx": 0,
+      "col_name": "SalesOrderID",
+      "col_type": "int",
+      "table": "SalesOrderHeader"
+    },
+    {
+      "col_idx": 1,
+      "col_name": "RevisionNumber",
+      "col_type": "tinyint",
+      "table": "SalesOrderHeader"
+    },
+    {
+      "col_idx": 2,
+      "col_name": "OrderDate",
+      "col_type": "datetime",
+      "table": "SalesOrderHeader"
+    },
+    {
+      "col_idx": 3,
+      "col_name": "DueDate",
+      "col_type": "datetime",
+      "table": "SalesOrderHeader"
+    },
+    {
+      "col_idx": 4,
+      "col_name": "ShipDate",
+      "col_type": "datetime",
+      "table": "SalesOrderHeader"
+    },
+    {
+      "col_idx": 5,
+      "col_name": "Status",
+      "col_type": "tinyint",
+      "table": "SalesOrderHeader"
+    },
+    {
+      "col_idx": 6,
+      "col_name": "OnlineOrderFlag",
+      "col_type": "Flag",
+      "table": "SalesOrderHeader"
+    },
+    {
+      "col_idx": 7,
+      "col_name": "SalesOrderNumber",
+      "col_type": "nvarchar",
+      "table": "SalesOrderHeader"
+    },
+    {
+      "col_idx": 8,
+      "col_name": "PurchaseOrderNumber",
+      "col_type": "OrderNumber",
+      "table": "SalesOrderHeader"
+    },
+    {
+      "col_idx": 9,
+      "col_name": "AccountNumber",
+      "col_type": "AccountNumber",
+      "table": "SalesOrderHeader"
+    },
+    {
+      "col_idx": 10,
+      "col_name": "CustomerID",
+      "col_type": "int",
+      "table": "SalesOrderHeader"
+    },
+    {
+      "col_idx": 11,
+      "col_name": "ShipToAddressID",
+      "col_type": "int",
+      "table": "SalesOrderHeader"
+    },
+    {
+      "col_idx": 12,
+      "col_name": "BillToAddressID",
+      "col_type": "int",
+      "table": "SalesOrderHeader"
+    },
+    {
+      "col_idx": 13,
+      "col_name": "ShipMethod",
+      "col_type": "nvarchar",
+      "table": "SalesOrderHeader"
+    },
+    {
+      "col_idx": 14,
+      "col_name": "CreditCardApprovalCode",
+      "col_type": "varchar",
+      "table": "SalesOrderHeader"
+    },
+    {
+      "col_idx": 15,
+      "col_name": "SubTotal",
+      "col_type": "money",
+      "table": "SalesOrderHeader"
+    },
+    {
+      "col_idx": 16,
+      "col_name": "TaxAmt",
+      "col_type": "money",
+      "table": "SalesOrderHeader"
+    },
+    {
+      "col_idx": 17,
+      "col_name": "Freight",
+      "col_type": "money",
+      "table": "SalesOrderHeader"
+    },
+    {
+      "col_idx": 18,
+      "col_name": "TotalDue",
+      "col_type": "money",
+      "table": "SalesOrderHeader"
+    },
+    {
+      "col_idx": 19,
+      "col_name": "Comment",
+      "col_type": "ntext",
+      "table": "SalesOrderHeader"
+    },
+    {
+      "col_idx": 20,
+      "col_name": "rowguid",
+      "col_type": "uniqueidentifier",
+      "table": "SalesOrderHeader"
+    },
+    {
+      "col_idx": 21,
+      "col_name": "ModifiedDate",
+      "col_type": "datetime",
+      "table": "SalesOrderHeader"
+    }
+  ],
+  "table_names": [
+    "Address",
+    "Customer",
+    "CustomerAddress",
+    "Product",
+    "ProductCategory",
+    "ProductModel",
+    "ProductDescription",
+    "ProductModelProductDescription",
+    "SalesOrderHeader",
+    "SalesOrderDetail"
+  ]
+}

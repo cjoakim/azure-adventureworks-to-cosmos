@@ -1,3 +1,20 @@
+# cj
+
+**/.DS_Store
+.ionide/
+.vscode/
+*.code-workspace
+**/.classpath
+**/.project
+**/.settings/
+
+**/bin/
+**/include/
+**/lib/
+**/man/
+**/obj/
+**/tmp/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
