@@ -1,7 +1,8 @@
 # azure-adventureworks-to-cosmos
 
 The purpose of this GitHub project is to demonstrate an example of how to port a 
-**Relational Database** to a **NoSQL CosmosDB** database.
+**Relational Database** to a **NoSQL CosmosDB** database.  The initial implementation
+targets a CosmosDB/Mongo database, but CosmosDB/SQL will be added soon.
 
 The database used in this project is the **AdventureWorksLT** database, which can
 automatically be created and populated when you create an **Azure SQL** database.
