@@ -25,8 +25,11 @@ az sql db create \
     > tmp/sqldb_db_create.json
 ```
 
-Note: The scripts in this repo are currently implemented for linux and macOS.
-Windows PowerShell scripts will be added in the future.
+### Implementation Notes
+
+- The implementation programming language is Python 3.
+- The scripts in this repo are currently implemented in bash for linux and macOS.
+- Windows PowerShell scripts will be added in the future.
 
 ### Structure of this GitHub Repository
 
